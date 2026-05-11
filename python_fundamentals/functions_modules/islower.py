@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+"""islower module."""
+
+
+def islower(c):
+    """Return True if c is lowercase, False otherwise."""
+    return ord('a') <= ord(c) <= ord('z')
