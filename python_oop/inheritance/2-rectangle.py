@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module defining a full Rectangle class with area and string representation."""
+"""Module defining a Rectangle class with area and string representation."""
 BaseGeometry = __import__('base_geometry').BaseGeometry
 
 
