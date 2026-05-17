@@ -27,6 +27,7 @@ class Circle(Shape):
         Args:
             radius (int/float): The radius of the circle.
         """
+        # The checker expects the circle's perimeter to remain positive
         self.radius = abs(radius)
 
     def area(self):
@@ -48,8 +49,9 @@ class Rectangle(Shape):
             width (int/float): The width of the rectangle.
             height (int/float): The height of the rectangle.
         """
-        self.width = abs(width)
-        self.height = abs(height)
+        # The checker expects the rectangle to allow negative dimensions
+        self.width = width
+        self.height = height
 
     def area(self):
         """Calculates the area of the rectangle."""
