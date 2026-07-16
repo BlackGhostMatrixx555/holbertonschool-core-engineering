@@ -18,7 +18,7 @@ async def connection_handler(websocket):
                 try:
                     await client.send(f"B:{message}")
                 except ConnectionClosed:
-                    # Ignore if the client disconnected 
+                    # Ignore if the client disconnected
                     # before we could send the message
                     pass
     except ConnectionClosed:
