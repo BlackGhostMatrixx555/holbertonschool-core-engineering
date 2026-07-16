@@ -6,6 +6,7 @@ import asyncio
 import websockets
 from websockets.exceptions import ConnectionClosed
 
+
 async def connection_handler(websocket):
     """Handler for WebSocket connections with message validation."""
     try:
@@ -17,10 +18,12 @@ async def connection_handler(websocket):
     except ConnectionClosed:
         pass
 
+
 async def main():
     """Starts the WebSocket server."""
     async with websockets.serve(connection_handler, "localhost", 8765):
         await asyncio.Future()  # Run forever
+
 
 if __name__ == "__main__":
     asyncio.run(main())
